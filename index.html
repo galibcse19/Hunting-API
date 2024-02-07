@@ -7,11 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header><h2>Phone Hunting By Using API</h2></header>
-    <main>
+<body class="mx-24">
+    <header><h2 class="text-center text-4xl py-10 ">Phone Hunting By Using API</h2></header>
+    <main class="container mx-auto">
         <section>
-            <div id="mainContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="my-10">
+                <input id="inputField" type="text" placeholder="Type here" class="input input-bordered input-secondary w-full max-w-xs" />
+                <button onclick="SrcNow()" class="btn btn-outline btn-secondary">Search Your Phone</button>
+            </div>
+        </section>
+        <section>
+            <div id="mainContainer" class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <!-- <figure class="px-10 pt-10">
                         <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
@@ -24,7 +30,7 @@
                             <button class="btn btn-primary">Buy Now</button>
                         </div>
                     </div> -->
-                </div> -->
+                <!-- </div> -->
             </div>
         </section>
     </main>
